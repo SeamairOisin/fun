@@ -12,7 +12,11 @@
  <script>
     	function changeImage() {
             var images = document.getElementById('hello');
-            images.src = "https://starzone.ragalahari.com/june2017/photosessions/priyanka-augustin-in-half-saree/priyanka-augustin-in-half-saree38.jpg";
+            var base = "https://starzone.ragalahari.com/june2017/photosessions/priyanka-augustin-in-half-saree/priyanka-augustin-in-half-saree";
+            var ext =".jpg";
+            var num = 1;
+            num = num + 1;
+            images.src = base + num + ext;
         }
 
     </script>
