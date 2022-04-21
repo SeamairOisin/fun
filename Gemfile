@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem "down"
+gem "down", "~> 5.3.1"
