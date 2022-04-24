@@ -10,5 +10,5 @@ BASE_URL = "https://starzone.ragalahari.com/april2018/hd/dikshapanth-stylebazaar
 def getData():
     r = requests.get(BASE_URL, stream = True)
     if r.status_code == 200:
-        with open('hello.jpg','wb') as f:
+        with open('./images/hello.jpg','wb') as f:
             shutil.copyfileobj(r.raw, f)
