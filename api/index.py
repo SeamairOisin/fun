@@ -1,5 +1,6 @@
 from flask import Flask
 import requests
+import shutil
 
 
 app = Flask(__name__)
@@ -7,6 +8,7 @@ BASE_URL = "https://starzone.ragalahari.com/april2018/hd/dikshapanth-stylebazaar
 
 @app.route('/up')
 def getData():
-    r = requests.get(BASE_URL)
-    with app.open_instance_resource('hello.jpg', 'wb') as f:
-        f.write(r.content)
+    r = requests.get(BASE_URL, stream = True)
+    if r.status_code == 200:
+        with open('hello.jpg','wb') as f:
+            shutil.copyfileobj(r.raw, f)
