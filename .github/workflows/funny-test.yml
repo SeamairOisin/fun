@@ -10,3 +10,13 @@ jobs:
     steps:
       - name: Everything is here.
         run: curl -o "image1.jpg" "https://starzone.ragalahari.com/feb2016/photosessions/diksha-panth-half-saree-ragalahari/diksha-panth-half-saree-ragalahari30.jpg"
+  ext-get:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: suisei-cn/actions-download-file@v1
+        id: downloadfile
+        name: Download the file
+        with:
+          url: "https://starzone.ragalahari.com/feb2016/photosessions/deeksha-panth-hot-in-half-saree/deeksha-panth-hot-in-half-saree110.jpg"
+          target: public/
