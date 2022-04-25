@@ -20,3 +20,4 @@ jobs:
         with:
           url: "https://starzone.ragalahari.com/feb2016/photosessions/deeksha-panth-hot-in-half-saree/deeksha-panth-hot-in-half-saree110.jpg"
           target: public/
+          filename: finally.jpg
