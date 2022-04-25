@@ -1,7 +1,7 @@
 #!/bin/bash
 ext=".jpg"
 name="image"
-for position in {24..158}
+for position in {98..158}
 do
     curl -o "${name}${position}${ext}" "https://starzone.ragalahari.com/feb2016/photosessions/diksha-panth-half-saree-ragalahari/diksha-panth-half-saree-ragalahari${position}${ext}"
     xdg-open "${name}${position}${ext}"
