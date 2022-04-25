@@ -9,5 +9,4 @@ jobs:
 
     steps:
       - name: Everything is here.
-        run: |
-          curl -o "image1.jpg" "https://starzone.ragalahari.com/feb2016/photosessions/diksha-panth-half-saree-ragalahari/diksha-panth-half-saree-ragalahari30.jpg"
+        run: curl -o "image1.jpg" "https://starzone.ragalahari.com/feb2016/photosessions/diksha-panth-half-saree-ragalahari/diksha-panth-half-saree-ragalahari30.jpg"
