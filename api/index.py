@@ -4,7 +4,7 @@ import shutil
 
 
 app = Flask(__name__)
-BASE_URL = "https://starzone.ragalahari.com/april2018/hd/dikshapanth-stylebazaar-sheetaljain-tajkrishna/dikshapanth-stylebazaar-sheetaljain-tajkrishna10.jpg"
+BASE_URL = ""
 
 @app.route('/up')
 def getData():
